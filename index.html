@@ -1,1 +1,57 @@
-<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <title>Musical Apps</title>\n    <style>\n        .container {\n            display: flex;\n            flex-direction: row;\n        }\n        .iframe-container {\n            position: relative;\n        }\n        iframe {\n            border: none;\n        }\n        .chord-charter {\n            width: 75%;\n            height: 500px; /* Set a height for the iframe */\n        }\n        .melody-tower {\n            width: 25%;\n            height: 500px; /* Set a height for the iframe */\n        }\n        .label {\n            position: absolute;\n            top: 0;\n            left: 0;\n            padding: 5px;\n            background-color: rgba(255, 255, 255, 0.8);\n            border: 1px solid #ccc;\n            border-radius: 5px;\n        }\n        @media (max-width: 768px) {\n            .container {\n                flex-direction: column;\n            }\n            .chord-charter, .melody-tower {\n                width: 100%;\n            }\n        }\n    </style>\n</head>\n<body>\n    <div class="container">\n        <div class="iframe-container">\n            <div class="label">Chord Charter</div>\n            <iframe class="chord-charter" src="URL_TO_CHORD_CHARTER_APP"></iframe>\n        </div>\n        <div class="iframe-container">\n            <div class="label">Melody Tower</div>\n            <iframe class="melody-tower" src="URL_TO_MELODY_TOWER_APP"></iframe>\n        </div>\n    </div>\n</body>\n</html>\n
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musical Apps</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+        .iframe-container {
+            position: relative;
+        }
+        iframe {
+            border: none;
+        }
+        .chord-charter {
+            width: 75%;
+            height: 500px; /* Set a height for the iframe */
+        }
+        .melody-tower {
+            width: 25%;
+            height: 500px; /* Set a height for the iframe */
+        }
+        .label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 5px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+            .chord-charter, .melody-tower {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="iframe-container">
+            <div class="label">Chord Charter</div>
+            <iframe class="chord-charter" src="chord-charter/index.html"></iframe>
+        </div>
+        <div class="iframe-container">
+            <div class="label">Melody Tower</div>
+            <iframe class="melody-tower" src="melody-tower/index.html"></iframe>
+        </div>
+    </div>
+</body>
+</html>
