@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musical Apps</title>
     <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
         .container {
             display: flex;
             flex-direction: row;
@@ -16,12 +20,12 @@
             border: none;
         }
         .chord-charter {
-            width: 75%;
-            height: 500px; /* Set a height for the iframe */
+            width: 75vw;
+            height: 100vh;
         }
         .melody-tower {
-            width: 25%;
-            height: 500px; /* Set a height for the iframe */
+            width: 25vw;
+            height: 100vh;
         }
         .label {
             position: absolute;
@@ -37,7 +41,7 @@
                 flex-direction: column;
             }
             .chord-charter, .melody-tower {
-                width: 100%;
+                width: 100vw;
             }
         }
     </style>
